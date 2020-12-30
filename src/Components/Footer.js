@@ -1,32 +1,32 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {NavLink} from 'reactstrap';
+import './Footer.css';
 
 const Footer = () => {
 
     return(
         <footer className="footer">
             <p>
-                <b>Montage Service Oliver Pöhl.</b>
+                <b>Montage Service Oliver Pöhl</b>
             </p>        
             <ul className="list-inline">
                 <li className="list-inline-item">
-                    <Link exact to='/'>
+                    <Link exact to='/' className='text-link'>
                         Starseite
                     </Link>
                 </li>
                 <li className="list-inline-item">
-                    <Link exact to='/hs-konfigurator'>
+                    <Link exact to='/hs-konfigurator' className='text-link'>
                         Haustür Konfigurator
                     </Link>
                 </li>
                 <li className="list-inline-item">
-                    <Link exact to='/datenschutz'>
+                    <Link exact to='/datenschutz' className='text-link'>
                         Datenschutz
                     </Link>
                 </li>
                 <li className="list-inline-item">
-                    <Link exact to='/impressum'>
+                    <Link exact to='/impressum' className='text-link'>
                         Impressum
                     </Link>
                 </li>

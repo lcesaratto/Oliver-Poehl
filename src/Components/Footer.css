@@ -1,0 +1,16 @@
+footer {
+    box-shadow: 0px -10px 10px -5px rgba(0, 0, 0, 0.24);
+    background-color: #343a40;
+    text-align:center;
+    color: #ffffff80;
+  }
+
+.text-link:link, .text-link:visited {
+    color: #ffffff80;
+    text-decoration: none;
+}
+
+.text-link:hover, .text-link:active {
+    color: #ffffffbf;
+    text-decoration: none;
+}

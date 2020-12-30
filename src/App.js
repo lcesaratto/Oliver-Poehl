@@ -16,24 +16,27 @@ import Starseite from './components/Starseite';
 
 function App () {
     return(
-        <Router>
-            <div className='App'>
-                <Header className='App-header'/>
-                <DisclaimerModal/>
-                <br/>
-                <Switch>
-                    <Route path='/' exact component={Starseite}/>
-                    <Route path='/kontakt' exact component={Kontakt}/>
-                    <Route path='/unternehmen' exact component={Unternehmen}/>
-                    <Route path='/leistungen' exact component={Leistungen}/>
-                    <Route path='/referenzen' exact component={Referenzen}/>
-                    <Route path='/datenschutz' exact component={Datenschutz}/>
-                    <Route path='/impressum' exact component={Impressum}/>
-                    <Route path='/hs-konfigurator' exact component={HSKonfigurator}/>
-                </Switch>
-                <Footer/>
-            </ div>
-        </Router>
+        <body>
+            <Router>
+                <div className='App'>
+                    <Header className='App-header'/>
+                    <DisclaimerModal/>
+                    <br/>
+                    <Switch>
+                        <Route path='/' exact component={Starseite}/>
+                        <Route path='/kontakt' exact component={Kontakt}/>
+                        <Route path='/unternehmen' exact component={Unternehmen}/>
+                        <Route path='/leistungen' exact component={Leistungen}/>
+                        <Route path='/referenzen' exact component={Referenzen}/>
+                        <Route path='/datenschutz' exact component={Datenschutz}/>
+                        <Route path='/impressum' exact component={Impressum}/>
+                        <Route path='/hs-konfigurator' exact component={HSKonfigurator}/>
+                    </Switch>
+                    <Footer/>
+                </ div>
+            </Router>
+        </body>
+        
     );
 }
 

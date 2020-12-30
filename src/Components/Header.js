@@ -16,28 +16,31 @@ function Header() {
 
     return (
         <div>
-            <Navbar color="light" light expand="md">
+            <Navbar color="dark" className="navbar-dark navbar-expand-sm" toggleable fixed="top">
                 <Link exact to='/'>
                     <img href="/" className="foto" src={logo} className="App-logo" alt="logo" />
                 </Link>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mr-auto" navbar>
+                    <Nav className="ml-auto" navbar>
                         <NavItem>
                             <NavLink tag={RRNavLink} exact to="/unternehmen" activeClassName="active">
                                 Das Unternehmen
                             </NavLink>
                         </NavItem>
+                        <div className="divider-vertical"></div>
                         <NavItem>
                             <NavLink tag={RRNavLink} exact to="/leistungen" activeClassName="active">
                                 Leistungen
                             </NavLink>
                         </NavItem>
+                        <div className="divider-vertical"></div>
                         <NavItem>
                             <NavLink tag={RRNavLink} exact to="/referenzen" activeClassName="active">
                                 Referenzen
                             </NavLink>
                         </NavItem>
+                        <div className="divider-vertical"></div>
                         <NavItem>
                             <NavLink tag={RRNavLink} exact to="/kontakt" activeClassName="active">
                                 Kontakt

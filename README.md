@@ -7,7 +7,7 @@ npm start
 
 npm i bootstrap
 npm i reactstrap react react-dom
+npm i react-router-dom
 
 Import Bootstrap CSS in the src/index.js file:
-
 import 'bootstrap/dist/css/bootstrap.css';
