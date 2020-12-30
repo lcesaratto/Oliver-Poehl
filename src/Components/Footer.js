@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import {NavLink} from 'reactstrap';
 
 const Footer = () => {
 
@@ -8,18 +10,26 @@ const Footer = () => {
                 <b>Montage Service Oliver Pöhl.</b>
             </p>        
             <ul className="list-inline">
-            <li className="list-inline-item">
-                <a href="#">Starseite</a>
-            </li>
-            <li className="list-inline-item">
-                <a href="#">Haustür Konfigurator</a>
-            </li>
-            <li className="list-inline-item">
-                <a href="#">Datenschutz</a>
-            </li>
-            <li className="list-inline-item">
-                <a href="#">Impressum</a>
-            </li>
+                <li className="list-inline-item">
+                    <Link exact to='/'>
+                        Starseite
+                    </Link>
+                </li>
+                <li className="list-inline-item">
+                    <Link exact to='/hs-konfigurator'>
+                        Haustür Konfigurator
+                    </Link>
+                </li>
+                <li className="list-inline-item">
+                    <Link exact to='/datenschutz'>
+                        Datenschutz
+                    </Link>
+                </li>
+                <li className="list-inline-item">
+                    <Link exact to='/impressum'>
+                        Impressum
+                    </Link>
+                </li>
             </ul>
         </footer>
     );

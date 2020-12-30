@@ -7,30 +7,41 @@ import {
     NavItem,
     NavLink,
   } from 'reactstrap';
-  import logo from './../logo.png';
+import {Link, NavLink as RRNavLink} from 'react-router-dom';
+import logo from './../images/logo.png';
 
-const Header = (props) => {
+function Header() {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
 
     return (
         <div>
             <Navbar color="light" light expand="md">
-                <img href="/" className="foto" src={logo} className="App-logo" alt="logo" />
+                <Link exact to='/'>
+                    <img href="/" className="foto" src={logo} className="App-logo" alt="logo" />
+                </Link>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                        <NavLink href="/">Das Unternehmen</NavLink>
+                            <NavLink tag={RRNavLink} exact to="/unternehmen" activeClassName="active">
+                                Das Unternehmen
+                            </NavLink>
                         </NavItem>
                         <NavItem>
-                        <NavLink href="/">Leistungen</NavLink>
+                            <NavLink tag={RRNavLink} exact to="/leistungen" activeClassName="active">
+                                Leistungen
+                            </NavLink>
                         </NavItem>
                         <NavItem>
-                        <NavLink href="/">Referenzen</NavLink>
+                            <NavLink tag={RRNavLink} exact to="/referenzen" activeClassName="active">
+                                Referenzen
+                            </NavLink>
                         </NavItem>
                         <NavItem>
-                        <NavLink href="/">Kontakt</NavLink>
+                            <NavLink tag={RRNavLink} exact to="/kontakt" activeClassName="active">
+                                Kontakt
+                            </NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

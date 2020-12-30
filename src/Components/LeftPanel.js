@@ -1,5 +1,5 @@
 import React from 'react'
-import img from './../links.png';
+import img from './..//images/links.png';
 import './LeftPanel.css';
 
 const LeftPanel = (props) => {
