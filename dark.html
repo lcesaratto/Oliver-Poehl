@@ -12,10 +12,21 @@
   html{scroll-behavior:smooth}
   body{background:#15110D}
   ::selection{background:#C8895A;color:#15110D}
+  @media (max-width:860px){
+    .op-page [style*="grid-template-columns"]{grid-template-columns:1fr !important;}
+    .op-page [style*="repeat(4"]{grid-template-columns:1fr 1fr !important;}
+    .op-page [style*="grid-auto-rows"]{grid-template-columns:1fr !important;}
+    .op-page [style*="justify-content:space-between"]{flex-wrap:wrap !important;}
+    .op-page nav{flex-wrap:wrap !important;gap:14px 18px !important;justify-content:flex-start !important;}
+    .op-page [style*="max-width:1240px"],.op-page [style*="max-width:1280px"],.op-page [style*="max-width:620px"]{padding-left:20px !important;padding-right:20px !important;}
+    .op-page h1{font-size:42px !important;line-height:1.02 !important;}
+    .op-page h2{font-size:32px !important;line-height:1.08 !important;}
+    .op-page h3{font-size:22px !important;}
+  }
 </style>
 </head>
 <body>
-<div style="font-family:'Manrope',sans-serif;color:#EDE7DD;background:#15110D;overflow-x:hidden;">
+<div class="op-page" style="font-family:'Manrope',sans-serif;color:#EDE7DD;background:#15110D;overflow-x:hidden;">
 
   <!-- ===== NAV ===== -->
   <header style="position:sticky;top:0;z-index:50;background:rgba(21,17,13,0.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(237,231,221,0.1);">
